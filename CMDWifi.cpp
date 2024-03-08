@@ -64,7 +64,7 @@ void CMDWifi::connect(char * ssid, char * pass, char * server, int port = 80)
   printWiFiStatus();
 }
 
-int CMDWifi::sendGet(char* sendKey, int value, char* getKey) { sprintf(urlPars, "/iot/send/%s/%i/get/%s", sendKey, value, getKey); return read();};
+int CMDWifi::sendGet(char* sendKey, int value, char* getKey) { sprintf(urlPars, "/iot/sendget/%s/%i/%s", sendKey, value, getKey); return read();};
 int CMDWifi::send(char* sendKey, int value) { sprintf(urlPars, "/iot/set/%s/%i", sendKey, value); return read();};
 int CMDWifi::get(char* getKey) { sprintf(urlPars, "/iot/get/%s", getKey); return read();};
 
