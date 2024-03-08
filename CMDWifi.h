@@ -8,7 +8,7 @@
 	by Federico Vanzati
   CMDWifi wrapper created 4 April 2017
 	by Hans van Arken
-  Modified 12 Febuary 2023
+  Last updated 08 March 2024
 	by Michael Tjia
 
   Released into the public domain.
@@ -40,7 +40,7 @@ class CMDWifi {
 		char urlPars[50];
 		int hostport;
 		unsigned long lastConnectionTime;
-    const unsigned long postingInterval = 3L * 1000L;
+    const unsigned long postingInterval = 1L * 1000L;
 
 };
 
